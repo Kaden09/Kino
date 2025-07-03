@@ -1,0 +1,13 @@
+.container {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+	user-select: none;
+}
+
+.main,
+.categories {
+	color: white;
+}

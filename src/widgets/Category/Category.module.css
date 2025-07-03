@@ -1,0 +1,46 @@
+.categoryLink {
+	text-decoration: none;
+}
+
+.titleWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	min-width: 200px;
+	height: 195px;
+	border: 3px solid rgba(29, 121, 210, 0.7);
+	border-radius: 30px;
+	transition: all 0.4s ease;
+	background: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.9) inset;
+	backdrop-filter: blur(0px);
+	-webkit-backdrop-filter: blur(0px);
+	animation: 0.7s ease categoryAnim;
+}
+
+.titleWrapper h2 {
+	font-weight: 900;
+	font-size: 22px;
+	color: rgb(220, 220, 220);
+	transition: all 0.2s ease;
+}
+
+.titleWrapper:hover {
+	background: rgba(255, 255, 255, 0.1);
+	/* background-image: linear-gradient(to right, rgb(56, 189, 248), rgb(59, 130, 246)); */
+}
+
+.titleWrapper:hover h2 {
+	color: white;
+}
+
+@keyframes categoryAnim {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

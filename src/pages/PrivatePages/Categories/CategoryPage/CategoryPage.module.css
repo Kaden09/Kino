@@ -1,0 +1,26 @@
+.categoryPageWrapper {
+	display: flex;
+	justify-content: center;
+	margin: 80px 0 60px 0;
+	width: 100%;
+}
+
+.categoryPageWrapperInset {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	gap: 30px;
+}
+
+.spinnerWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.listMovies {
+	gap: 60px;
+	display: flex;
+	flex-wrap: wrap;
+}

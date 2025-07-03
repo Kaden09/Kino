@@ -1,0 +1,52 @@
+.container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navBarWrapper {
+	min-height: 590px;
+}
+
+.show {
+	height: 56px;
+	position: fixed;
+	right: 50px;
+	bottom: 70px;
+	z-index: 999;
+	border-radius: 50%;
+	background: #292929;
+	border: 2px solid transparent;
+	cursor: pointer;
+	padding: 13px;
+	transition: border 0.2s ease;
+	transition: opacity 0.4s ease;
+	animation: 0.4s ease showAnim;
+}
+
+.show:hover {
+	border-color: #1d79d2;
+}
+
+.show svg {
+	fill: white;
+}
+
+.show svg path {
+	fill: rgb(205, 205, 205);
+	transition: fill 0.2s ease;
+}
+
+.show:hover svg path {
+	fill: #1d79d2;
+}
+
+@keyframes showAnim {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

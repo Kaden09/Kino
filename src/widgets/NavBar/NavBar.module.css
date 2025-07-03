@@ -1,0 +1,247 @@
+.navBar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding: 20px 50px;
+	z-index: 100;
+	background-image: linear-gradient(to bottom, #111111d6 0%, transparent 100%);
+}
+
+.signInLink {
+	color: #b4b4b4;
+	font-size: 18px;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.signInLink:hover {
+	color: white;
+}
+
+.navigation {
+	display: flex;
+	gap: 20px;
+}
+
+.signIn {
+	flex-basis: 60px;
+}
+
+.helperForCenter {
+	flex-basis: 60px;
+}
+
+.logOut {
+	color: #b4b4b4;
+	border: none;
+	font-size: 18px;
+	background: transparent;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.logOut:hover {
+	color: white;
+}
+.header_burger body {
+	overflow: hidden;
+}
+
+@media (max-width: 630px) {
+	.helperForCenter {
+		display: none;
+	}
+
+	.header_burger {
+		display: block;
+		position: fixed;
+		right: 20px;
+		top: 20px;
+		width: 30px;
+		height: 20px;
+		z-index: 101;
+	}
+
+	.header_burger::before,
+	.header_burger::after {
+		content: '';
+		background-color: #b4b4b4;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		transition: all 0.3s ease 0s;
+	}
+
+	.header_burger::after {
+		bottom: 0;
+	}
+
+	.header_burger::before {
+		top: 0;
+	}
+
+	.header_burger span {
+		position: absolute;
+		background-color: #b4b4b4;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		top: 9px;
+		transition: all 0.3s ease 0s;
+	}
+
+	.header_burger.active::before {
+		transform: rotate(45deg);
+		top: 9px;
+	}
+
+	.header_burger.active::after {
+		transform: rotate(-45deg);
+		bottom: 9px;
+	}
+
+	.header_burger.active span {
+		transform: scale(0);
+	}
+
+	.navigation {
+		flex-direction: column;
+	}
+
+	.navBar {
+		position: fixed;
+		top: -52px;
+		left: 0px;
+		right: 0px;
+		height: 500px;
+		background-color: #262626;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 35px;
+		transform: translateY(-400px);
+		transition: all 0.3s ease 0s;
+	}
+
+	.header_burger.active ~ .navBar {
+		transform: translateY(0px);
+	}
+}
+
+.searchBox {
+	width: fit-content;
+	height: fit-content;
+	position: relative;
+}
+
+.searchBox svg {
+	fill: #b4b4b4;
+}
+
+.searchBox:hover svg {
+	fill: white;
+}
+
+.inputSearch {
+	width: 0;
+	height: 0;
+	position: absolute;
+	right: -30px;
+	border-style: none;
+	font-size: 15px;
+	letter-spacing: 2px;
+	outline: none;
+	border-radius: 25px;
+	transition: all 0.5s ease-in-out;
+	background: transparent;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.inputSearch::placeholder {
+	color: rgb(188, 188, 188);
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.btnSearch {
+	width: 50px;
+	height: 50px;
+	border-style: none;
+	font-size: 20px;
+	font-weight: bold;
+	outline: none;
+	cursor: pointer;
+	border-radius: 50%;
+	position: absolute;
+	right: -38px;
+	bottom: -39px;
+	color: #ffffff;
+	background-color: transparent;
+	pointer-events: painted;
+}
+
+.btnSearch:focus ~ .inputSearch {
+	width: 400px;
+	padding: 20px;
+	border-radius: 0px;
+	background-color: transparent;
+	transition: all 500ms ease;
+	background: white;
+	border-radius: 50px;
+}
+
+.inputSearch:focus {
+	width: 400px;
+	padding: 20px;
+	border-radius: 0px;
+	background-color: transparent;
+	transition: all 500ms ease;
+	background: white;
+	border-radius: 50px;
+}
+
+.profileWrapper {
+	border: 3px solid grey;
+	border-radius: 50%;
+	padding: 2px;
+	animation: 0.7s ease profileAnim;
+	transition: all 0.4s ease;
+}
+
+.profileContainer {
+	min-width: 50px;
+	height: 50px;
+	background: rgb(49, 49, 49);
+	border: none;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	font-weight: 700;
+	transition: all 0.2s ease;
+}
+
+.profileContainer:hover {
+	background: rgb(65, 65, 65);
+}
+
+.profileLink {
+	text-decoration: none;
+	color: white;
+}
+
+@keyframes profileAnim {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

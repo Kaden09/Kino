@@ -1,0 +1,176 @@
+.wrapper {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: 0.7s ease wrapperAnim;
+}
+
+@keyframes wrapperAnim {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	border: 3px solid grey;
+	width: 700px;
+	border-radius: 40px;
+	padding: 30px;
+}
+
+.userInfo {
+	display: flex;
+	gap: 30px;
+}
+
+.imgBorder {
+	border: 5px solid grey;
+	border-radius: 50%;
+	padding: 5px;
+}
+
+.profileImg {
+	width: 200px;
+	height: 200px;
+	background: rgba(128, 128, 128, 0.225);
+	border: none;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 60px;
+	font-weight: 700;
+}
+
+.infoWrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+label {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.infoString {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.infoString input {
+	background: rgba(128, 128, 128, 0.225);
+	border: 1px solid rgb(69, 69, 69);
+	outline: none;
+	padding: 8px 15px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	color: white;
+	font-size: 16px;
+	transition: all 0.4s ease;
+}
+
+.infoString input:hover {
+	border-color: rgb(168, 168, 168);
+}
+
+.infoString .done:hover {
+	border-color: rgb(168, 168, 168);
+}
+
+.inputWrapper {
+	display: flex;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.logOut {
+	display: flex;
+	gap: 10px;
+}
+
+.logOut button {
+	padding: 10px;
+	width: 50%;
+	border: 1px solid rgb(69, 69, 69);
+	border-radius: 10px;
+	cursor: pointer;
+	background: rgba(128, 128, 128, 0.225);
+	/* color: rgb(162, 162, 162); */
+	font-weight: 700;
+	font-size: 16px;
+	transition: all 0.2s ease;
+}
+
+.cancelSubButton {
+	color: rgb(162, 162, 162);
+}
+
+.cancelSubButton:hover {
+	border-color: rgb(168, 168, 168);
+}
+
+.logOutButton {
+	color: rgb(215, 38, 38);
+}
+
+.logOutButton:hover {
+	border-color: rgb(215, 38, 38);
+}
+
+.inputWrapper p {
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.doneButton {
+	padding: 0 5px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	cursor: pointer;
+	transition: all 0.4s ease;
+	border: 1px solid rgb(69, 69, 69);
+}
+
+.doneButton:hover {
+	border-color: rgb(168, 168, 168);
+}
+
+.change {
+	border-radius: 5px;
+	padding: 5px;
+	font-weight: 700;
+	border: none;
+}
+
+.surname,
+.name {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
+
+.name svg,
+.surname svg {
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.name svg:hover,
+.surname svg:hover {
+	fill: rgb(184, 184, 184);
+}

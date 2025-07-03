@@ -1,0 +1,11 @@
+.mainInput {
+	font-size: clamp(1rem, -0.75rem + 4.667vw, 1.575rem);
+	font-weight: 700;
+	width: clamp(18rem, -24.813rem + 137vw, 41.25rem);
+	background: #3c3c3c;
+	border: none;
+	border-radius: 50px;
+	padding: max(12px, 1.18vw) max(20px, 2.12vw);
+	outline: none;
+	color: white;
+}

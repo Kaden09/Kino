@@ -1,0 +1,58 @@
+/* Контейнер для всей регистрации */
+.container_Registration {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	animation: 0.7s ease signInAnim;
+}
+/* Отступ у всех дочерних элементов Контйнера 1-ой вложенности */
+.container_Registration > * {
+	margin-top: 33px;
+}
+
+.h2_Registration__Header {
+	font-size: clamp(2.188rem, -2.188rem + 11.667vw, 3.375rem);
+}
+
+.p_Registration__Alternate_Join {
+	font-size: 20px;
+}
+.p_Registration__Alternate_Join > a {
+	color: #0085ff;
+	cursor: pointer;
+	text-decoration: none;
+}
+.check {
+	background-color: #fff;
+}
+
+.p_Registration__Alternate_Join {
+	font-size: 20px;
+}
+
+.p_Registration__Alternate_Join > a {
+	color: #0085ff;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.signInInput {
+	width: clamp(18rem, -24.813rem + 137vw, 35.25rem);
+}
+
+.signInButton {
+	padding: max(12px, 0.18vw) max(20px, 4.12vw);
+}
+
+@keyframes signInAnim {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

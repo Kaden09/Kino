@@ -1,0 +1,24 @@
+.navBarLink {
+	text-decoration: none;
+}
+
+.navBarLink {
+	color: #b4b4b4;
+}
+
+.navBarLink:hover {
+	color: white;
+}
+
+.active {
+	padding-bottom: 5px;
+	border-bottom: 3px solid #1d79d2;
+}
+
+.active h3 {
+	color: white;
+}
+
+.active h3 {
+	color: white;
+}

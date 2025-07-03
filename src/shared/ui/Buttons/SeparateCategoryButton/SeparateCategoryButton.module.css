@@ -1,0 +1,26 @@
+.categoryLink {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	color: white;
+	text-decoration: none;
+	transition: all 1.2s ease;
+}
+
+.categoryLink h2 {
+	transition: all 0.2s ease;
+}
+
+.categoryLink:hover h2 {
+	color: #59acff;
+}
+
+.categoryLink svg {
+	margin-top: 3px;
+	transition: all 0.2s ease;
+}
+
+.categoryLink:hover svg {
+	transform: translateX(3px);
+	fill: #59acff;
+}

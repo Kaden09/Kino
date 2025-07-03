@@ -1,0 +1,10 @@
+.stringMoviesWrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	margin-bottom: 60px;
+}
+
+.listMovies {
+	gap: 30px;
+}

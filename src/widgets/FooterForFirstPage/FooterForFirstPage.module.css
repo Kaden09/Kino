@@ -1,0 +1,65 @@
+.footerWrapper {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 10px;
+	text-align: center;
+	border-top: 1px solid #404040;
+	padding: 20px;
+	min-height: 150px;
+}
+
+.whoWorks {
+	color: rgb(209, 209, 209);
+}
+
+.ourContacts {
+	color: #7a7a7a;
+}
+
+.authors {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 15px;
+}
+
+.author {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.iconImg {
+	width: 25px;
+	height: 25px;
+}
+
+.moreInfo {
+	color: white;
+	fill: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.2s ease;
+	cursor: pointer;
+}
+
+.moreInfo:hover {
+	color: #1d79d2;
+	fill: #1d79d2;
+}
+
+.moreInfoLink {
+	text-decoration: none;
+}
+
+.icon {
+	transition: all 0.2s ease;
+}
+
+.icon:hover {
+	fill: white;
+}
