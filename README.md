@@ -37,5 +37,3 @@ http://localhost:3000
 email: m.volkov.dev@gmail.com  
 telegram: https://t.me/kaden70  
 github: https://github.com/Kaden09  
-
-#4A6BFFч
